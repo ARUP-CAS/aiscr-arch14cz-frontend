@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:arch14cz="https://www.arch14.cz/schema/1.0/" targetNamespace="https://www.arch14.cz/schema/1.0/" elementFormDefault="qualified" version="1.0">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:arch14cz="https://arch14.aiscr.cz/schema/1.0/" targetNamespace="https://arch14.aiscr.cz/schema/1.0/" elementFormDefault="qualified" version="1.0">
 
   <xs:annotation>
-    <xs:documentation>XML Schema for native export of the Arch14CZ database. Related API: https://www.arch14.cz/?page=api_doc</xs:documentation>
+    <xs:documentation>XML Schema for native export of the Arch14CZ database. Related API: https://arch14.aiscr.cz/?page=api_doc</xs:documentation>
   </xs:annotation>
 
   <xs:complexType name="refType">
