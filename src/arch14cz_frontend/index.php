@@ -43,6 +43,8 @@ if (isset($_GET['verb'])) {
 				<li><a href="?page=download">DOWNLOAD</a></li>
 				<li><a href="?page=api_doc">API</a></li>
 				<li><a href="?page=about">ABOUT</a></li>
+				<li><a href="?page=contribute">CONTRIBUTE</a></li>
+				<li><a href="?page=res14c">C-14 RESOLUTION CALCULATOR</a></li>
 			</ul>
 		</div>
 	</div>

@@ -52,7 +52,27 @@ $date_now = date("d.m.Y");
 	<li><strong>Dating Order From, Dating Order To</strong> - Ordering of the relative dating of the context based on relative chronological relations with the other datings.</li>
 	<li><strong>Sample Number</strong> - ID assigned by the submitter of the dated sample.</li>
 	<li><strong>Sample Notes</strong> - Includes collagen values and other accompanying measurements.</li>
-	<li><strong>Material</strong> - General type of the material of the sample.</li>
+	<li><strong>Material</strong> - General type of the material of the sample.
+            <p>
+bone/tooth <small><em>[unspcified bone; includes horn, antler, hoof, nail or other hard tissues]</em></small></em></small><br>
+human bone/tooth <small><em>[includes nails]</em></small><br>
+animal bone/tooth <small><em>[includes horn, antler, tusk, hoof or other hard animal tissues]</em></small><br>
+charcoal<br>
+wood <small><em>[includes bark]</em></small><br>
+plant macroremain <small><em>[unspecified plant macroremain but also plant parts different from seed/fruit]</em></small><br>
+seed/fruit<br>
+organic sediment <small><em>[includeds humus, bulk sample, humic acids]</em></small><br>
+organic crust <small><em>[carbonised food crust]</em></small><br>
+mollusc shell<br>
+excrement<br>
+organic fibre <small><em>[includes plant fibres, animal fibres and hairs usually plaited in string]</em></small><br>
+textile<br>
+burned clay <small><em>[includes daub, plaster, clay objects different from pottery vessels]</em></small><br>
+pottery <small><em>[ceramic vessels]</em></small><br>
+tar/resin<br>
+other material <small><em>[includes apatite, speleothem, ivory, paper, mortar]</em></small><br>
+unpublished</p>
+           </li>
 	<li><strong>Material AMCR ID</strong></li>
 	<li><strong>Material Notes</strong> - Detailed description of the material.</li>
 	<li><strong>Source</strong> - Primary (usually a publication) and Secondary (usually a database) sources of information about the C-14 measurement.</li>
@@ -65,13 +85,12 @@ $date_now = date("d.m.Y");
 <p>Latest database update: <?php echo $date_updated;?></p>
 
 <h2>Contact</h2>
-<p>Did you notice any mistakes or missing dates? Do you want to upload your radiocarbon dates? Do you have questions concerning the database?</p>
-<p>Let us know at <a href="mailto:vondrovsky@arup.cas.cz">vondrovsky@arup.cas.cz</a></p>
+<p>Václav Vondrovský, Institute of Archaeology of the CAS Prague, <a href="mailto:vondrovsky@arup.cas.cz">vondrovsky@arup.cas.cz</a></p>
 
 <h2>Developer Notes</h2>
 <p>The frontend and backend interface of this database is Free and Open Source and available at the following locations:</p>
-<p><a href="https://github.com/ARUP-CAS/aiscr-arch14cz-backend">Arch14CZ - Backend</a></p>
-<p><a href="https://github.com/ARUP-CAS/aiscr-arch14cz-frontend">Arch14CZ - Frontend</a></p>
+<p><a href="https://github.com/demjanp/arch14cz_backend">Arch14CZ - Backend</a></p>
+<p><a href="https://github.com/demjanp/arch14cz_frontend">Arch14CZ - Frontend</a></p>
 
 <h2>Acknowledgements</h2>
 <p>Development of this database was supported by OP RDE, MEYS, under the project &quot;Ultra-trace isotope research in social and environmental studies using accelerator mass spectrometry&quot;, Reg. No. CZ.02.1.01/0.0/0.0/16_019/0000728.</p>
