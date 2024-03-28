@@ -89,8 +89,8 @@ unpublished</p>
 
 <h2>Developer Notes</h2>
 <p>The frontend and backend interface of this database is Free and Open Source and available at the following locations:</p>
-<p><a href="https://github.com/demjanp/arch14cz_backend">Arch14CZ - Backend</a></p>
-<p><a href="https://github.com/demjanp/arch14cz_frontend">Arch14CZ - Frontend</a></p>
+<p><a href="https://github.com/ARUP-CAS/aiscr-arch14cz-backend">Arch14CZ - Backend</a></p>
+<p><a href="https://github.com/ARUP-CAS/aiscr-arch14cz-frontend">Arch14CZ - Frontend</a></p>
 
 <h2>Acknowledgements</h2>
 <p>Development of this database was supported by OP RDE, MEYS, under the project &quot;Ultra-trace isotope research in social and environmental studies using accelerator mass spectrometry&quot;, Reg. No. CZ.02.1.01/0.0/0.0/16_019/0000728.</p>
