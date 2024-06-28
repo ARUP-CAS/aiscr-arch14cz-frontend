@@ -1,5 +1,21 @@
 <?php
+function sanitize_input($data) {
+	return htmlspecialchars(stripslashes(trim($data)));
+}
+
 session_start();
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(openssl_random_pseudo_bytes(32));
+}
+
+if (isset($_POST['submit'])) {
+	if (!isset($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+		die('CSRF token validation failed');
+	}
+	unset($_POST["submit"]);
+	$_POST = array_map('sanitize_input', $_POST);
+}
+
 $query = "SELECT * FROM frontend.c_14_main";
 $conditions = [];
 
@@ -90,6 +106,7 @@ $_SESSION['conditions'] = $conditions;
 <form action="export.php" method="post" enctype="multipart/form-data" id="exportform">
 	<input type="submit" name="Export_CSV" value="Export to CSV"/>
 	<input type="submit" name="Export_Excel" value="Export to Excel"/>
+	<input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" />
 </form>
 <table id="results">
 	<thead>

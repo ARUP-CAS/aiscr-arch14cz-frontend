@@ -39,7 +39,7 @@ To clone the `aiscr-arch14cz-frontend` GitHub project, follow these steps:
 ### Publishing the Frontend <a name="publishing"></a>
 
 1. Download the [latest release](https://github.com/ARUP-CAS/aiscr-arch14cz-frontend/releases/latest).
-2. Edit the `db_connect.php` file to reflect the correct the hostname, database name, username and password of the Arch14CZ frontend database.
+2. Edit the `config/config.php` file to reflect the correct the hostname, database name, username and password of the Arch14CZ frontend database.
 3. Upload the contents of the folder `src/arch14cz_frontend` to the root directory on the web server. 
 
 ## Contact: <a name="contact"></a>

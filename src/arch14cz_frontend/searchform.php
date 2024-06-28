@@ -1,4 +1,9 @@
 <?php
+session_start();
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(openssl_random_pseudo_bytes(32));
+}
+
 require_once("db_connect.php");
 $countries = pg_query($db, "SELECT * FROM frontend.c_14_dict_country ORDER BY \"Name\" ASC");
 $districts = pg_query($db, "SELECT * FROM frontend.c_14_dict_district ORDER BY \"Code\" ASC");
@@ -12,6 +17,7 @@ $materials = pg_query($db, "SELECT * FROM frontend.c_14_dict_material ORDER BY \
 <div id="searchform">
 	<h2 class="first">Query Database</h2>
 	<form action="" method="post">
+		<input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" />
 		<div class="searchgroup">
 			<fieldset>
 				<legend>Location</legend>
